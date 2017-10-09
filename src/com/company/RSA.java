@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.List;
 import java.util.Random;
 
@@ -31,11 +32,11 @@ public class RSA {
 
     /**
      * Function for generating encryption key
-     *
+     * <p>
      * Generating encryption key(e) requirements:
      * e must be a prime number
      * 1 < e < lambda(n) ( WIKIPEDIA )
-     *
+     * <p>
      * Optional: ( ONE CHINESE GUY ON YOUTUBE TOLD 2 MORE )
      * e cannot be a divider of lambda
      * e cannot be a divider of n
@@ -129,5 +130,17 @@ public class RSA {
 
     public int getD() {
         return d;
+    }
+
+    public int getP() {
+        return p;
+    }
+
+    public int getQ() {
+        return q;
+    }
+
+    public int getLambda() {
+        return lambda;
     }
 }

@@ -8,7 +8,7 @@ public class Main {
          * Minimum and maximum range for finding prime numbers
          */
         int minRange = 100;
-        int maxRange = 200;
+        int maxRange = 1000;
         /**
          * Message to be encrypted
          */
@@ -23,6 +23,7 @@ public class Main {
         int encryptedMessage = rsa.encryptMessage(message);
         int decryptedMessage = rsa.decryptMessage(encryptedMessage);
 
+        System.out.println(rsa.getP() + "  " + rsa.getQ() + "  " +rsa.getLambda()   );
         System.out.println("Encryption key = " + rsa.getE() + "\nDecryption key = " + rsa.getD() +
                 "\nMessage to be encrypted = " + message + " EncryptedMessage = " + encryptedMessage +
                 "\nDecryptedMessage = " + decryptedMessage);
